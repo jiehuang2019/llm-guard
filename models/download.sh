@@ -1,5 +1,6 @@
 
-#python3.11 download.py protectai deberta-v3-base-prompt-injection-v2
+python3.11 download.py dslim bert-base-NER
+python3.11 download.py protectai deberta-v3-base-prompt-injection-v2
 python3.11 download.py MoritzLaurer deberta-v3-base-zeroshot-v1.1-all-33
 python3.11 download.py tomaarsen span-marker-bert-base-orgs
 python3.11 download.py unitary unbiased-toxic-roberta
