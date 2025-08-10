@@ -1,7 +1,8 @@
 from huggingface_hub import snapshot_download
+import sys
 snapshot_download(
-    repo_id="protectai/deberta-v3-base-prompt-injection-v2",      # e.g. "Declare-lab/deberta-v3-base-prompt-injection-v2"
-    local_dir="./models/deberta-v3-base-prompt-injection-v2",
+    repo_id=f"{sys.argv[1]}/{sys.argv[2]}",      
+    local_dir=f"./models/{sys.argv[2]}",
     local_dir_use_symlinks=False,
     token=None   # uses HF_TOKEN env automatically
 )
